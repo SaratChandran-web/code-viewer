@@ -1,0 +1,28 @@
+﻿/*codeviewer-light
+CodeMirror theme file created with CodeMirror-Themes
+https://github.com/mkaminsky11/codemirror-themes*/
+.cm-s-codeviewer-light.CodeMirror{background:rgba(255,255,255,1) !important;}
+.cm-s-codeviewer-light.CodeMirror{color:rgba(0,0,0,1); font-family:sans-serif; !important;}
+.cm-s-codeviewer-light div.CodeMirror-selected{background:rgba(144,238,144,1) !important; font-weight:bold;}
+.cm-s-codeviewer-light .CodeMirror-gutters{background:rgba(255,255,255,1); border-right: 1px solid rgba(211,211,211,1);  !important; font-weight:bold;}
+.cm-s-codeviewer-light .CodeMirror-guttermarker{color:rgba(0,255,137,1) !important; font-weight:bold;}
+.cm-s-codeviewer-light .CodeMirror-guttermarker-subtle{color:rgba(0,100,0,1) !important; font-weight:bold;}
+.cm-s-codeviewer-light .CodeMirror-linenumber{color:rgba(50,50,50,1) !important; font-weight:bold;}
+.cm-s-codeviewer-light .CodeMirror-cursor{border-color:rgba(0,0,0,1) !important; font-weight:bold;}
+.cm-s-codeviewer-light span.cm-comment{color:rgba(205,171,83,1) !important; font-weight:bold;}
+.cm-s-codeviewer-light span.cm-atom{color:rgba(161,106,148,1) !important; font-weight:bold;}
+.cm-s-codeviewer-light span.cm-number{color:rgba(161,106,148,1) !important; font-weight:bold;}
+.cm-s-codeviewer-light span.cm-property{color:rgba(1,162,82,1) !important; font-weight:bold;}
+.cm-s-codeviewer-light span.cm-attribute{color:rgba(1,162,82,1) !important; font-weight:bold;}
+.cm-s-codeviewer-light span.cm-keyword{color:rgba(219,45,32,1) !important; font-weight:bold;}
+.cm-s-codeviewer-light span.cm-string{color:rgba(155,135,12,1) !important; font-weight:bold;}
+.cm-s-codeviewer-light span.cm-string-2{color:rgba(255,128,0,1) !important; font-weight:bold;}
+.cm-s-codeviewer-light span.cm-variable{color:rgba(1,162,82,1) !important; font-weight:bold;}
+.cm-s-codeviewer-light span.cm-variable-2{color:rgba(1,160,228,1) !important; font-weight:bold;}
+.cm-s-codeviewer-light span.cm-def{color:rgba(232,187,208,1) !important; font-weight:bold;}
+.cm-s-codeviewer-light span.cm-bracket{color:rgba(0,100,0,1) !important; font-weight:bold;}
+.cm-s-codeviewer-light span.cm-tag{color:rgba(154,205,50,1) !important; font-weight:bold;}
+.cm-s-codeviewer-light span.cm-link{color:rgba(161,106,148,1) !important; font-weight:bold;}
+.cm-s-codeviewer-light span.cm-error{background:rgba(0,128,0,1) !important; font-weight:bold;}
+.cm-s-codeviewer-light .CodeMirror-activeline-background{color:rgba(50,50,50,1) !important; font-weight:bold;}
+.cm-s-codeviewer-light .CodeMirror-matchingbracket{color:rgba(161,106,148,1) !important; font-weight:bold;}
