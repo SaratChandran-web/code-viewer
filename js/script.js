@@ -97,6 +97,9 @@ function clearall(){
 	htmlcode.focus();
 	csscode.focus();
 	jscode.focus();
+	document.querySelector('#hs').style.color="transparent";
+   document.querySelector('#cs').style.color="transparent";
+   document.querySelector('#js').style.color="transparent";
 }
 function clearhtml(){
 	document.getElementsByClassName("popuptrash")[0].style.display="none";
@@ -110,6 +113,7 @@ function clearhtml(){
 	htmlcode.focus();
 	csscode.focus();
 	jscode.focus();
+	document.querySelector('#hs').style.color="transparent";
 }
 function clearcss(){
 	document.getElementsByClassName("popuptrash")[0].style.display="none";
@@ -123,6 +127,7 @@ function clearcss(){
 	htmlcode.focus();
 	csscode.focus();
 	jscode.focus();
+	document.querySelector('#cs').style.color="transparent";
 }
 function clearjs(){
 	document.getElementsByClassName("popuptrash")[0].style.display="none";
@@ -136,6 +141,7 @@ function clearjs(){
 	htmlcode.focus();
 	csscode.focus();
 	jscode.focus();
+	document.querySelector('#js').style.color="transparent";
 }
 function htabopen(){
 	document.getElementsByClassName("CodeMirror")[0].style.display="block";
@@ -164,114 +170,114 @@ function jtabopen(){
 	document.getElementById("csstab").classList.remove("active");
 	jscode.focus();
 }
-var actKeyr="1";
-var actKeyl="3";
-var actKeyfs="1";
-document.addEventListener('Keydown', function(event) {
-  if (event.ctrlKey && event.keyCode == 37)   /*----Ctrl+Left-Arrow-Key*/
+var actkeyr="1";
+var actkeyl="3";
+var actkeyfs="1";
+document.addEventListener('keydown', function(event) {
+  if (event.altKey && event.keyCode == 38)   /*----alt+up-arrow-key*/
   {
    event.preventDefault();
-    if(actKeyl=="3"){
+    if(actkeyl=="3"){
     jtabopen(); 
-    actKeyl="2";
+    actkeyl="2";
     }
-    else if(actKeyl=="2"){
+    else if(actkeyl=="2"){
     ctabopen();
-    actKeyl="1";
+    actkeyl="1";
     }
-    else if(actKeyl=="1"){
+    else if(actkeyl=="1"){
    htabopen();
-    actKeyl="3";
+    actkeyl="3";
     }
   }
- if (event.altKey && event.keyCode == 107)   /*----Alt++-Key*/
+ if (event.altKey && event.keyCode == 107)   /*----alt+-key*/
   {
    event.preventDefault();
-    if(actKeyfs=="1"){
+    if(actkeyfs=="1"){
    fsizes();
-   actKeyfs="2";
+   actkeyfs="2";
     }
-    else if(actKeyfs=="2"){
+    else if(actkeyfs=="2"){
     fsizem();
-   actKeyfs="3";
+   actkeyfs="3";
     }
-    else if(actKeyfs=="3"){
+    else if(actkeyfs=="3"){
    fsizel();
-      actKeyfs="4";
+      actkeyfs="4";
     }
-      else if(actKeyfs=="4"){
+      else if(actkeyfs=="4"){
    fsizesxl();
-     actKeyfs="1";
+     actkeyfs="1";
     }
   }
-  if (event.altKey && event.shiftKey && event.keyCode == 61)   /*----Alt++-Key*/
+  if (event.altKey && event.shiftKey && event.keyCode == 61)   /*----alt+shift+-key*/
   {
    event.preventDefault();
-    if(actKeyfs=="1"){
+    if(actkeyfs=="1"){
    fsizes();
-   actKeyfs="2";
+   actkeyfs="2";
     }
-    else if(actKeyfs=="2"){
+    else if(actkeyfs=="2"){
     fsizem();
-   actKeyfs="3";
+   actkeyfs="3";
     }
-    else if(actKeyfs=="3"){
+    else if(actkeyfs=="3"){
    fsizel();
-      actKeyfs="4";
+      actkeyfs="4";
     }
-      else if(actKeyfs=="4"){
+      else if(actkeyfs=="4"){
    fsizesxl();
-     actKeyfs="1";
+     actkeyfs="1";
     }
   }
-else  if (event.ctrlKey && event.keyCode == 39)  /*----Ctrl+Right-Arrow-Key*/
+else  if (event.altKey && event.keyCode == 40)  /*----right-arrow-key*/
 	{
 	event.preventDefault();
-	if(actKeyr=="1"){
+	if(actkeyr=="1"){
     htabopen();
-    actKeyr="2";
+    actkeyr="2";
     }
-    else if(actKeyr=="2"){
+    else if(actkeyr=="2"){
     ctabopen();
-    actKeyr="3";
+    actkeyr="3";
     }
-    else if(actKeyr=="3"){
+    else if(actkeyr=="3"){
    jtabopen();
-    actKeyr="1";
+    actkeyr="1";
     }
  }
-   else  if (event.altKey && event.keyCode == 82)  /*----Alt+R-Key*/
+   else  if (event.altKey && event.keyCode == 82)  /*----alt+r-key*/
 	{
 		event.preventDefault();
     run();
     codeupdatepreview();
   }
-  else  if (event.altKey && event.keyCode == 67) /*----Alt+C-Key*/
+  else  if (event.altKey && event.keyCode == 67) /*----alt+c-key*/
 	{
 		event.preventDefault();
     save();
   }
-  else  if (event.altKey  && event.shiftKey && event.keyCode == 68)  /*----Alt+D-Key*/
+  else  if (event.altKey  && event.shiftKey && event.keyCode == 68)  /*----alt+shift+d-key*/
 	{
 		event.preventDefault();
    download();
   }
-else  if (event.altKey && event.keyCode == 78)  /*----Alt+N-Key*/
+else  if (event.altKey && event.keyCode == 78)  /*----alt+n-key*/
 	{
    event.preventDefault();
    newfile();
   }
-  else  if (event.altKey && event.keyCode == 73)  /*----Alt+I-Key*/
+  else  if (event.altKey && event.keyCode == 73)  /*----alt+i-key*/
 	{
 		event.preventDefault();
    openabout();
   }
-  else  if (event.altKey && event.keyCode == 46)  /*----Alt+Delete-Key*/
+  else  if (event.altKey && event.keyCode == 46)  /*----alt+delete-key*/
 	{
 		event.preventDefault();
    clearall();
   }
-   else  if (event.ctrlKey && event.altKey && event.keyCode == 70)  /*----Ctrl+Alt+F--Key*/
+   else  if (event.ctrlKey && event.altKey && event.keyCode == 70)  /*----ctrl+alt+f-key*/
 	{
 		event.preventDefault();
    fontsize();
@@ -281,32 +287,47 @@ else  if (event.altKey && event.keyCode == 78)  /*----Alt+N-Key*/
 		event.preventDefault();
   popupwincan();
   }
-  else  if (event.altKey && event.keyCode == 76)  /*----Alt+L-Key*/
+  else  if (event.altKey && event.keyCode == 76)  /*----alt+l-key*/
 	{
 		event.preventDefault();
-   layout();
+   viewport();
   }
-  else  if (event.altKey && event.keyCode == 37)  /*----Alt+Left-Arrow-Key*/
+  else  if (event.altKey && event.keyCode == 49)  /*----alt+1*/
 	{
 	event.preventDefault();
     htabopen();
  }
- else  if (event.altKey && event.keyCode == 40)  /*----Alt+Down-Arrow-Key*/
+ else  if (event.altKey && event.keyCode == 50)  /*----alt+2*/
 	{
 	event.preventDefault();
 	  ctabopen();
  }
- else  if (event.altKey && event.keyCode == 39)  /*----Alt+Right-Arrow-Key*/
+ else  if (event.altKey && event.keyCode == 51)  /*----alt+3*/
 	{
 	event.preventDefault();
 	 jtabopen();
 }
- else  if (event.altKey && event.keyCode == 77)  /*----Alt+M*/
+else  if (event.altKey && event.keyCode == 97)  /*----alt+numberpad 1*/
+	{
+	event.preventDefault();
+    htabopen();
+ }
+ else  if (event.altKey && event.keyCode == 98)  /*----alt+numberpad 2*/
+	{
+	event.preventDefault();
+	  ctabopen();
+ }
+ else  if (event.altKey && event.keyCode == 99)  /*----alt+numberpad 3*/
+	{
+	event.preventDefault();
+	 jtabopen();
+}
+ else  if (event.altKey && event.keyCode === 77)  /*----alt+m*/
 	{
 	event.preventDefault();
 	 fullscreen();
 }
- else  if (event.altKey && event.keyCode == 85)  /*----Alt+U*/
+ else  if (event.altKey && event.keyCode === 85)  /*----alt+u*/
 	{
 	event.preventDefault();
 	 mylink();
@@ -592,6 +613,3 @@ function getFontSize() {
    document.querySelector('#js').style.color="transparent";
 }
 window.onload = getFontSize();
-
-
-
