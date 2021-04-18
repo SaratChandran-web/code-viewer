@@ -152,7 +152,7 @@ padding:2px;
 z-index:1;
 position:absolute;
 bottom:-15px;
-background-color:white;
+background-color:var(--bgmenu);
 }
 .btn:nth-child(1) .btnlabel{
 margin:0px 0px 0px -25px;
